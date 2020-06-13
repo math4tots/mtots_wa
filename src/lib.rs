@@ -1,7 +1,10 @@
 #![allow(unused_imports)]
+extern crate js_sys;
 extern crate mtots_core;
+extern crate wasm_bindgen;
 
 mod c;
+mod wb;
 
 use mtots_core::main;
 use mtots_core::BuiltinClasses;
