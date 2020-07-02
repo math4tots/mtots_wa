@@ -1,12 +1,9 @@
 #![allow(unused_imports)]
-extern crate js_sys;
 extern crate mtots_core;
-extern crate wasm_bindgen;
+extern crate stdweb;
 
-mod c;
-mod wb;
+mod m;
 
-use mtots_core::main;
 use mtots_core::BuiltinClasses;
 use mtots_core::BuiltinExceptions;
 use mtots_core::Class;
@@ -39,6 +36,8 @@ use mtots_core::VMap;
 use mtots_core::Value;
 use mtots_core::ValueKind;
 use mtots_core::SOURCE_FILE_EXTENSION;
+
+pub use m::main;
 
 #[cfg(test)]
 mod tests {
